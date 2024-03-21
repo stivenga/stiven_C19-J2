@@ -2,12 +2,12 @@ package com.ps.controller;
 
 import com.ps.model.Cliente;
 import com.ps.service.IClienteService;
+import com.ps.service.imp.ClienteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 //TODO
 @RequiredArgsConstructor
 @RestController //Decir que esta clase es administrada o controlada por SPRING
@@ -18,12 +18,6 @@ public class ClienteController {
 
 
     private final IClienteService iClienteService;
-
-    //TODO
-   /* @GetMapping
-    public List<Cliente> getAllClientes(){
-        return null;
-    }*/
 
 
     @GetMapping
